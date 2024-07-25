@@ -47,6 +47,9 @@ sudo usermod -aG docker ubuntu
 newgrp docker
 sudo systemctl status docker
 ```
+```
+sudo chmod 777 /var/run/docker.sock
+```
 
 # **Install Docker Scout:**
 ![image](https://github.com/vijaygiduthuri/Netflix/assets/125960600/840d499f-4a45-4571-b361-c1a0598de793)
@@ -56,9 +59,6 @@ docker login       `Give Dockerhub credentials here`
 ```
 ```
 curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b /usr/local/bin
-```
-```
-sudo chmod 777 /var/run/docker.sock
 ```
 
 # **Jenkins pipeline**
